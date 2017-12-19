@@ -2,7 +2,7 @@
 
 You will be creating a Black Jack card game that will consist of 2 players, the dealer and ONE player.
 
-To initiate the game, you will ask th player how many decks they would like to play with.
+To initiate the game, you will ask the player how many decks they would like to play with.
 
 The game will have 4 controls:
 
@@ -11,29 +11,32 @@ The game will have 4 controls:
     - Stand
     - Hit
 
-   The game should continue until 60% of the cards have been used. Upon reaching that point the game will end.
-   The game will keep track of how many hands were won and loss by the player.
+   The game should continue until 60% of the cards have been dealt at the end of a hand. Upon reaching that point the game will end.
+   The game will keep track of how many hands were won and lost by the player.
    
-   To begin with the dealer and player will receive 2 cards.
-   The player has the option to "Hit" or "Stand".
+   To begin with the dealer and player will receive 2 cards each.
+   The player has the option to "Hit" or "Stand". If the player's cards total is greater than 21 the player busts and play continues to the dealer.
    
    Once the player stands the dealer will play out his hand.  
-   The dealer must hit at 16 or lower. And must stand on 17 and above.
+   The dealer must hit at 16 or lower and must stand on 17 and above, unless it is a soft 17.
+   
+   If both player and dealer have the same total number or both bust the game is considered a tie and play continues with a new hand.
    
    
    ## Technology
    
    You can use any technology you find appropriate to write the game. 
-   It can be backend or front end driven.
+   It can be backend or frontend driven.
    
-   You may save states using Sessions, Cookies, Database or Cache.
-   If you prefer to work in a Framework, you can, but not necessary.
+   You may save states using Sessions, Cookies, Database, Cache, or any other method you prefer.
+   If you prefer to work in a Framework, you can, but it is not necessary.
    
    You can load any composer packages you like.
    
    ## References
+   
    You can use any major references, such as PHP.net, MySQL.com, Package documentation and so on.
-   You may not copy any similar public code.
+   You may not copy any similar code.
    
    ## Infrastructure
    
