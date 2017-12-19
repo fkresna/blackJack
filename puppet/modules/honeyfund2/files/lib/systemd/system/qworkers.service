@@ -1,0 +1,29 @@
+# Stop dance for laravel queue worker
+# =======================
+#
+# ExecStop sends SIGSTOP (graceful stop) to the qworkers process.
+# If, after 5s (--retry QUIT/5) qworkers is still running, systemd takes control
+# and sends SIGTERM (fast shutdown) to the main process.
+# After another 5s (TimeoutStopSec=5), and if qworkers is alive, systemd sends
+# SIGKILL to all the remaining processes in the process group (KillMode=mixed).
+#
+#
+[Unit]
+Description=Laravel Artisan Queue Workers
+Documentation=https://laravel.com/docs/5.4/queues
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/honeyfund.com
+ExecStart=/usr/bin/php artisan queue:listen redis
+ExecReload=/usr/bin/php artisan queue:restart
+TimeoutStopSec=5
+KillMode=mixed
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
