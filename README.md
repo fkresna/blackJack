@@ -2,11 +2,11 @@
 
 You will be creating a Black Jack card game that will consist of 2 players, the dealer and ONE player.
 
-To initiate the game, you will ask th player how many decks they would like to play with.
+The game will use 1 deck of 52 cards.
 
 The game will have 4 controls:
 
-    - Start Game
+    - New Game
     - Deal
     - Stand
     - Hit
@@ -20,13 +20,12 @@ The game will have 4 controls:
    Once the player stands the dealer will play out his hand.  
    The dealer must hit at 16 or lower. And must stand on 17 and above.
    
-   
    ## Technology
    
    You can use any technology you find appropriate to write the game. 
    It can be backend or front end driven.
    
-   You may save states using Sessions, Cookies, Database or Cache.
+   You may save states using PHP Sessions.
    If you prefer to work in a Framework, you can, but not necessary.
    
    You can load any composer packages you like.
@@ -51,4 +50,6 @@ The game will have 4 controls:
    Password: vagrant
    ```
   Logs are located in the standard /var/log
+  
+  The URL to the local server is: http://test-php.honeyfund.com
   
