@@ -2,14 +2,14 @@
 
 You will be creating a Black Jack card game that will consist of 2 players, the dealer and ONE player.
 
-To initiate the game, you will ask th player how many decks they would like to play with.
+The game will have 1 standard deck of 52 cards.
 
 The game will have 4 controls:
 
-    - Start Game
-    - Deal
-    - Stand
+    - New Game
     - Hit
+    - Stand
+    - Deal
 
    The game should continue until 60% of the cards have been used. Upon reaching that point the game will end.
    The game will keep track of how many hands were won and loss by the player.
@@ -51,4 +51,7 @@ The game will have 4 controls:
    Password: vagrant
    ```
   Logs are located in the standard /var/log
+  
+  http://test-php.honeyfund.com
+  
   
